@@ -2,14 +2,14 @@
 
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Framework属于企业级底层开发框架，集成了log、cache、db、message、rule、tx，每块都以模块形式组织，可以根据项目需要获取模块。
  
- + framework-common 定义公用的常量、工具类 采用了spring-boot方式启动， 启动类为Application， 也可以支持web方式启动。
-+ framework-log 分布式集成日志模块，详细的记录了每个方法执行的参数、返回结果、执行时间，可以很方便的排查问题或告警，通过远程接口上传服务器（支持直连服务端，也支持通过kafka发送）
-+ framework-cache 定义了缓存的获取。  支持注解方式访问缓存， 支持基于Redis的分布式锁
-+ [framework-db](#framework-db) 是简单易用的轻量级DAO(Data Access Object)框架，它集成了Hibernate实体维护和Mybaits SQL分离的两大优势，提供了非入侵式API，可以与Hibernate、SpringJdbc等数据库框架很好的集成 
-+ framework-job 基于[ElasticJob](http://elasticjob.io)简单封装的定时器，支持分布式、分片等功能
-+ framework-message 消息模块，通过简单的api发布和订阅事件， 目前支持kafka、redis、rocketMq
-+ framework-rule 规则引擎，基于json的简单规则引擎， 支持多种插件及扩展， 例如：基于状态机的工作流引擎
-+ [framework-tx](#framework-tx) 分布式事务，支持各种远程接口、同步异步消息。
+ + [framework-common](基础工具) 定义公用的常量、工具类 采用了spring-boot方式启动， 启动类为Application， 也可以支持web方式启动。
++ [framework-log](日志) 分布式集成日志模块，详细的记录了每个方法执行的参数、返回结果、执行时间，可以很方便的排查问题或告警，通过远程接口上传服务器（支持直连服务端，也支持通过kafka发送）
++ [framework-cache](缓存) 定义了缓存的获取。  支持注解方式访问缓存， 支持基于Redis的分布式锁
++ [framework-db](数据库) 是简单易用的轻量级DAO(Data Access Object)框架，它集成了Hibernate实体维护和Mybaits SQL分离的两大优势，提供了非入侵式API，可以与Hibernate、SpringJdbc等数据库框架很好的集成 
++ [framework-job](任务) 基于[ElasticJob](http://elasticjob.io)简单封装的定时器，支持分布式、分片等功能
++ [framework-message](异步消息) 消息模块，通过简单的api发布和订阅事件， 目前支持kafka、redis、rocketMq
++ [framework-rule](规则引擎) 规则引擎，基于json的简单规则引擎， 支持多种插件及扩展， 例如：基于状态机的工作流引擎
++ [framework-tx](分布式事务) 分布式事务，支持各种远程接口、同步异步消息。
 
 ### 2.框架的由来
 
