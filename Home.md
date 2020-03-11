@@ -20,7 +20,7 @@
 * 15年6月开始framework-0.1版本的设计，数据库已经用的很爽了，但是一个项目不仅仅是数据库，还有很多其他东西， 当时针对的是web项目规划了很多模块，类似于现在的web结构， 做了job可以在线管理，消息、rpc、缓存等等功能
 * 16年1月22日正式发布1.0版本
 * 16年7月21日发布2.0版本，web模块和jeecg合并单独组成framework-manager， framework专门解决项目底层问题
-* 17年9月24日发布3.0版本，升级了spring boot版本至2.0， 去掉了dubbox这个rpc框架，引入spring-cloud框架
+* 17年9月24日发布3.0版本，升级了spring boot版本至2.0， 去掉了dubbox这个rpc框架，引入spring-cloud框架。前端也放弃了jeecg，基于[ant-design-pro](https://pro.ant.design/index-cn) 实现的一套web框架(目前还未从项目中分离出来，暂未开源)
 * 20年2月4日发布了3.4版本， 增加了framework-tx模块，正式支持分布式事务。
 
 ### 3.采用项目
