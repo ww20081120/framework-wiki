@@ -16,7 +16,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hibernate我用了2年半， 13年下半年去中兴软创用了一年SQL服务（软创内部框架）， 14年在京东驻场用了2个月的MyBatis，综合了一下这些项目，各有各的优缺点。例如针对复杂业务SQL，hibernate明显能力不足，简单的功能MyBaties也要弄死人，所以一直在思考一个问题有没有一个框架能扬长避短，把大家的优点都发挥出来。 当时在某网站上看了一个帖子介绍了minidao，思路很新颖，拜读了源码。 从此框架之路走起。（ 为什么不直接使用minidao，一是这个项目不火、更新节奏也不快，使用风险较大， 二是软创内部使用的都是自己的框架，连spring都没有，hibernate更不可能，jdk都处于1.4、1.5版本，不可能直接使用minidao ）
 
 * 14年7月份左右在软创内部gitlab上发布了第一个版本easydao，主要是结合软创当时的系统框架在其之上封装了一层。
-* 14年10月份在github上发布了easydao 剥离掉软创内部框架依赖，使其可以不依赖软创的框架，可以结合spring和hibernate，或者可以单独使用jdbc来使用。
+* 14年10月份在github上发布了[easydao](https://github.com/ww20081120/easydao) 剥离掉软创内部框架依赖，使其可以不依赖软创的框架，可以结合spring和hibernate，或者可以单独使用jdbc来使用。
 * 15年6月开始framework-0.1版本的设计，数据库已经用的很爽了，但是一个项目不仅仅是数据库，还有很多其他东西， 当时针对的是web项目规划了很多模块，类似于现在的web结构， 做了job可以在线管理，消息、rpc、缓存等等功能
 * 16年1月22日正式发布1.0版本
 * 16年7月21日发布2.0版本，web模块和jeecg合并单独组成framework-manager， framework专门解决项目底层问题
