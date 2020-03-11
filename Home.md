@@ -8,7 +8,7 @@
 + [framework-db](数据库) 是简单易用的轻量级DAO(Data Access Object)框架，它集成了Hibernate实体维护和Mybaits SQL分离的两大优势，提供了非入侵式API，可以与Hibernate、SpringJdbc等数据库框架很好的集成 
 + [framework-job](任务) 基于[ElasticJob](http://elasticjob.io)简单封装的定时器，支持分布式、分片等功能
 + [framework-message](异步消息) 消息模块，通过简单的api发布和订阅事件， 目前支持kafka、redis、rocketMq
-+ [framework-rule](规则引擎) 规则引擎，基于json的简单规则引擎， 支持多种插件及扩展， 例如：基于状态机的工作流引擎
++ [framework-rule](规则引擎) 规则引擎，基于json的轻量级规则引擎， 支持多种插件及扩展， 例如：基于状态机的工作流引擎
 + [framework-tx](分布式事务) 分布式事务，支持各种远程接口、同步异步消息。
 
 ### 2.框架的由来
