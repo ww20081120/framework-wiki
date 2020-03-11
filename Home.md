@@ -1,6 +1,6 @@
 ### 1.简介
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Framework属于企业级底层开发框架，集成了log、cache、db、message、rule、tx，每块都以模块形式组织，可以根据项目需要获取模块。我们的初衷是屏蔽各中第三方库造成的冲突，打造一套屏蔽底层中间件的全新API，提高项目代码的适配能力。
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Framework属于企业级底层开发框架，集成了log、cache、db、message、rule、tx，每块都以模块形式组织，可以根据项目需要获取模块。我们的初衷是屏蔽项目中各种第三方库之间的版本冲突，打造一套屏蔽底层中间件的全新API，提高项目代码的适配能力。
  
  + [framework-common](基础工具) 定义公用的常量、工具类 采用了spring-boot方式启动， 启动类为Application， 也可以支持web方式启动。
 + [framework-log](日志) 分布式集成日志模块，详细的记录了每个方法执行的参数、返回结果、执行时间，可以很方便的排查问题或告警，通过远程接口上传服务器（支持直连服务端，也支持通过kafka发送）
