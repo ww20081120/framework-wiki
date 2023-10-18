@@ -10,6 +10,8 @@
 + [framework-message](异步消息) 消息模块，通过简单的api发布和订阅事件， 目前支持kafka、redis、rocketMq
 + [framework-rule](规则引擎) 规则引擎，基于json的轻量级规则引擎， 支持多种插件及扩展， 例如：基于状态机的工作流引擎
 + [framework-tx](分布式事务) 分布式事务，支持各种远程接口、同步异步消息。
++ [framework-dependencies] 项目依赖，解决版本包依赖问题
++ [framework-shell] 控制台方式提供命令操作，支持自定义各种命令，做各种小工具使用。
 
 ### 2.框架的由来
 
