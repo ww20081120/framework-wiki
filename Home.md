@@ -3,7 +3,7 @@
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Framework属于企业级底层开发框架，集成了log、cache、db、message、rule、tx，每块都以模块形式组织，可以根据项目需要获取模块。我们的初衷是屏蔽项目中各种第三方库之间的版本冲突，打造一套屏蔽底层中间件的全新API，提高项目代码的适配能力。
  
  + [framework-common](基础工具) 定义公用的常量、工具类 采用了spring-boot方式启动， 启动类为Application， 也可以支持web方式启动。
-+ [framework-log](日志) 分布式集成日志模块，详细的记录了每个方法执行的参数、返回结果、执行时间，可以很方便的排查问题或告警，通过远程接口上传服务器（支持直连服务端，也支持通过kafka发送）
++ [framework-log](跟踪日志) 分布式集成日志模块，详细的记录了每个方法执行的参数、返回结果、执行时间，可以很方便的排查问题或告警，通过远程接口上传服务器（支持直连服务端，也支持通过kafka发送）
 + [framework-cache](缓存) 定义了缓存的获取。  支持注解方式访问缓存， 支持基于Redis的分布式锁
 + [framework-db](数据库) 是简单易用的轻量级DAO(Data Access Object)框架，它集成了Hibernate实体维护和Mybaits SQL分离的两大优势，提供了非入侵式API，可以与Hibernate、SpringJdbc等数据库框架很好的集成 
 + [framework-job](任务) 定时任务，支持quartz、xxl-job、[ElasticJob](http://elasticjob.io)简单封装的定时器，支持分布式、分片等功能
