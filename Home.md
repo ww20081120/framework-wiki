@@ -13,6 +13,8 @@
 + [framework-dependencies] 项目依赖，解决版本包依赖问题
 + [framework-shell] 控制台方式提供命令操作，支持自定义各种命令，做各种小工具使用。
 
+jdk1.8请使用framework3.X版本，framework4.X已升级至jdk21版本
+
 ### 2.框架的由来
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hibernate我用了2年半， 13年下半年去中兴软创用了一年SQL服务（软创内部框架）， 14年在京东驻场用了2个月的MyBatis，综合了一下这些项目，各有各的优缺点。例如针对复杂业务SQL，hibernate明显能力不足，简单的功能MyBaties也要弄死人，所以一直在思考一个问题有没有一个框架能扬长避短，把大家的优点都发挥出来。 当时在某网站上看了一个帖子介绍了minidao，思路很新颖，拜读了源码。 从此框架之路走起。（ 为什么不直接使用minidao，一是这个项目不火、更新节奏也不快，使用风险较大， 二是软创内部使用的都是自己的框架，连spring都没有，hibernate更不可能，jdk都处于1.4、1.5版本，不可能直接使用minidao ）
@@ -24,6 +26,7 @@
 * 16年7月21日发布2.0版本，web模块和jeecg合并单独组成framework-manager， framework专门解决项目底层问题
 * 17年9月24日发布3.0版本，升级了spring boot版本至2.0， 去掉了dubbox这个rpc框架，引入spring-cloud框架。前端也放弃了jeecg，基于[ant-design-pro](https://pro.ant.design/index-cn) 实现的一套web框架(目前还未从项目中分离出来，暂未开源)
 * 20年2月4日发布了3.4版本， 增加了framework-tx模块，正式支持分布式事务。
+* 23年人工智能比较火，又增加了framework-langchain4j，专门扩展国内的一些大模型。
 
 ### 3.采用项目
 1.  [中兴视通网上营业厅项目V1.0](https://www.seecom.com.cn)
