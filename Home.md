@@ -12,6 +12,7 @@
 + [framework-tx](分布式事务) 分布式事务，支持各种远程接口、同步异步消息。
 + [framework-dependencies] 项目依赖，解决版本包依赖问题
 + [framework-shell] 控制台方式提供命令操作，支持自定义各种命令，做各种小工具使用。
++ [framework-langchain4j] 对langchain4j的补充，支持国内的大模型，让大家更高效的开发AIGC应用。
 
 jdk1.8请使用framework3.X版本，framework4.X已升级至jdk21版本
 
